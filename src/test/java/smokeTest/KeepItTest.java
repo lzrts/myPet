@@ -6,7 +6,7 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class KeeItTest {
+public class KeepItTest {
 
     private final String LOGIN = "automation@keepitqa.com";
     private final String PASS = "E#*b2wGIbFHz";

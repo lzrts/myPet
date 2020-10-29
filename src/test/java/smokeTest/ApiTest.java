@@ -5,14 +5,14 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class apiTest {
+public class ApiTest {
 
     private final String LOGIN = "automation@keepitqa.com";
     private final String PASS = "E#*b2wGIbFHz";
 
-    //
+    // Test for the validation of the response elements
     @Test
-    void testTest(){
+    void testWillPass(){
 
         given()
                 .auth()
@@ -28,15 +28,17 @@ public class apiTest {
                 .body("user.parent", equalTo("80ltks-yhfls5-24zyf2"))
                 .body("user.subscribed", equalTo("true"));
     }
+
+    //Test will fail, just for report statistic
     @Test
     void testWillFail(){
 
         given()
                 .auth()
                 .basic(LOGIN, PASS)
-                .when()
+        .when()
                 .get("https://ws-test.keepit.com/users/zhc4v6-5ev7di-9hhhlm")
-                .then()
+        .then()
                 .assertThat()
                 .statusCode(200)
                 .body("user.enabled", equalTo("false"))

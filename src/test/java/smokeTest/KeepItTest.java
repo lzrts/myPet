@@ -22,5 +22,9 @@ public class KeepItTest {
                 .pressNextBtn();
 
         Assert.assertTrue(WebDriverRunner.url().contains("https://login.microsoftonline.com/"));
+        System.out.println("HI");
+        System.out.println("HI");
+        System.out.println("HI");
+        System.out.println("HI");
     }
 }

@@ -1,0 +1,144 @@
+<html><head>
+    <script>
+        window.location.href.indexOf('veritas') > -1 ? window.location.href = 'v-signin.html' : void 0;
+    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+    <!-- Twitter bootstrap includes -->
+    <link href="/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/3.2.0/css/bootstrapValidator.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/app.snapshots.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/respond/html5shiv.min.js"></script>
+    <script type="text/javascript" src="/js/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="/js/jquery/jquery-1.11.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/3.2.0/js/bootstrapValidator.min.js"></script>
+
+    <script type="text/javascript" src="/js/jquery/jquery.cookies.2.2.0.min.js"></script>
+    <script type="text/javascript" src="/js/lib/i18next-1.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.address.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.client.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.base64.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.visible.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.selectbox-0.2.js"></script>
+    <script type="text/javascript" src="/js/lib/XMLWriter-1.0.0-min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.polyglot.language.switcher.js"></script>
+    <script type="text/javascript" src="/js/lib/utf8bytes.js"></script>
+<!-- 
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/app.ui.js"></script>
+    <script type="text/javascript" src="/js/app.ui.product.js"></script>
+    <script type="text/javascript" src="/js/app.multiuser.js"></script> -->
+    <script type="text/javascript" src="/js/lib/xml2json.js"></script>
+    <script type="text/javascript" src="/js/legacy-bundle.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/themes/default/css/jquery/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/themes/default/css/hint/hint.min.css">
+    <link rel="stylesheet" type="text/css" href="/themes/default/css/selectbox/jquery.selectbox.css">
+    <link rel="stylesheet" type="text/css" href="/themes/default/css/jquery.bxslider.css">
+
+    <link rel="stylesheet" type="text/css" href="/themes/default/css/new-styles.css">
+    <link rel="stylesheet" type="text/css" href="/themes/default/css/new-responsive.css">
+
+    <link href="/themes/default/css/polyglot-language-switcher.css" rel="stylesheet">
+
+    <!-- Support viewport device-width option for the IE10 in Windows 8 & Windows Phone 8 -->
+    <style type="text/css">
+        @-webkit-viewport   { width: device-width; }
+        @-moz-viewport      { width: device-width; }
+        @-ms-viewport       { width: device-width; }
+        @-o-viewport        { width: device-width; }
+        @viewport           { width: device-width; }
+    </style>
+    <script type="text/javascript" language="JavaScript">
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement('style');
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    '@-ms-viewport{width:auto!important}'
+                )
+            );
+            document.querySelector('head').appendChild(msViewportStyle);
+        }
+
+        $.address.externalChange(function () {
+            $(document).ready(function () {
+                $.detectLanguage(function (lang) {
+                    i18n.init({
+                        lng: lang,
+                        fallbackLng: false,
+                        load: 'current',
+                        getAsync: false,
+                        useCookie: true,
+                        resGetPath: '/locales/__lng__/translation.json'
+                    });
+
+                    /** Run application **/
+
+                    App.UI.loadGeneralStyles(function(){
+//                      Backbone.history.start();
+                        App.getPageContent();
+                    });
+                });
+            });
+        });
+    </script>
+<link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/new-styles.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/new-responsive.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/centralconfig.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/messages.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/inline-edit.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/bootstrap.keepit.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/search.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/admin.logviewer.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/polyglot-language-switcher.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/jquery.bxslider.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/jquery.iviewer.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/mediaelementplayer.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/pick-a-color.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/ion.rangeSlider.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/ion.rangeSlider.skinNice.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/css/jquery.webui-popover.min.css"><link type="text/css" rel="stylesheet" href="https://ws-test.keepit.com/themes/default/general.css"><title>Keepit</title><link href="/themes/default/icon.ico" type="image/x-icon" rel="icon"><link href="/themes/default/icon.ico" type="image/x-icon" rel="shortcut icon"></head>
+<body>
+
+<div class="navigation-top-block">
+    <div class="navigation-top">
+        <ul class="navigation-menu"><li><a class="logo" href="https://ws-test.keepit.com"></a></li></ul>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="wrapper" role="main" style="min-height: 512px;">
+    <div class="content signin" style="min-height: 442px;"><div class="signin-box "><div class="signin-image"><img src="https://ws-test.keepit.com/themes/default/images/sign_in.png"></div><div class="signin-text"><iframe src="https://ws-test.keepit.com/blank.html" id="formsubmitpage" name="formsubmitpage" style="display:none"></iframe><form autocomplete="on" method="post" target="formsubmitpage" class="col-xs-12 formset form-vertical bv-form" id="login-form" name="login-form" novalidate="novalidate"><div class="">Sign In</div><fieldset><div class="messages-block"><div class="alert-message error hide"></div><div class="alert-message success hide"></div></div><div class="clearfix"></div><div class="form-group login-form-login-form-group has-error"><div class=" "><input type="text" class="form-control" id="login-form-login" name="login" value="" placeholder="Email" autocomplete="on" data-bv-field="login"></div><small class="help-block" data-bv-validator="notEmpty" data-bv-for="login" data-bv-result="INVALID" style="">Value is required and cannot be empty.</small><small class="help-block" data-bv-validator="emailAddress" data-bv-for="login" data-bv-result="VALID" style="display: none;">Invalid email.</small></div><div class="form-group login-form-password-form-group has-error"><div class=" "><input type="password" class="form-control" id="login-form-password" name="password" value="" placeholder="Password" data-bv-field="password"></div><small class="help-block" data-bv-validator="callback" data-bv-for="password" data-bv-result="INVALID" style="">Value is required and cannot be empty.</small></div><div class="actions"><div class=""><input type="submit" id="login-form-login-button" class="btn btn-success submit-button " value="Sign In" disabled="disabled"></div></div><div class="clearfix"></div><div class="forgot-password"><a href="javascript:void(0);" class="forgot-password-link">Forgot your password?</a></div><div style="display:none;" class="keepit-classic">Keepit Classic - Sign in here! <a href="http://cp.keepit.com" class="keepit-classic-link">Click here!</a></div></fieldset></form><div></div></div></div></div>
+    <div class="content about" style="display: none; min-height: 442px;"></div>
+    <div class="content upgrade" style="display: none; min-height: 442px;"></div>
+    <div class="content download" style="display: none; min-height: 442px;"></div>
+    <div class="content price" style="display: none; min-height: 442px;"></div>
+    <div class="content terms" style="display: none; min-height: 442px;"></div>
+    <div class="content support" style="display: none; min-height: 442px;"></div>
+</div>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only"></span></button>
+                <h3 class="modal-title" id="modalLabel"></h3>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+<footer><ul id="bottom-menu"><li><a href="https://ws.keepit.com/" target="_blank" class="without-click-handler" rel="home">Home</a></li><li class="devider">-</li><li><a href="https://help.keepit.com/" target="_blank" class="without-click-handler" rel="support">Support</a></li><li class="devider">-</li><li><a href="https://www.keepit.com/terms-of-service-privacy/" rel="terms" target="_blank">Terms and Conditions</a></li><li class="devider">-</li><li class="copyright">© 2020 Keepit. All rights reserved.</li></ul><div id="polyglotLanguageSwitcher"><ul class="dropdown"></ul></div></footer>
+
+<script type="text/javascript" src="/js/bundles/libs.bundle.min.js"></script>
+<script type="text/javascript" src="/js/bundles/kpt.bundle.js"></script>
+
+
+
+</body></html>

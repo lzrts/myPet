@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class ApiTest {
 
-    private final String LOGIN = "automation@keepitqa.com";
+    private final String LOGIN2 = "automation@keepitqa.com";
     private final String PASS = "E#*b2wGIbFHz";
 
     // Test for the validation of the response elements
@@ -16,7 +16,7 @@ public class ApiTest {
 
         given()
                 .auth()
-                .basic(LOGIN, PASS)
+                .basic(LOGIN2, PASS)
         .when()
                 .get("https://ws-test.keepit.com/users/zhc4v6-5ev7di-9hhhlm")
         .then()
